@@ -1,41 +1,71 @@
-/* Control the popup size */
 body {
-    width: 300px;
-    height: 150px;
+    width: 200px;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 10px;
     background-color: #f0f0f0;
+    transition: height 0.3s ease;
+  }
+  
+  /* Default height for two buttons */
+  body {
+    height: 100px;
+  }
+  
+  /* Reduced height when only the stop button is visible */
+  body.grayscale-active {
+    height: 70px;
   }
   
   /* Style the buttons */
   button {
     display: block;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 8px;
+    margin: 5px 0;
     border: none;
-    border-radius: 10px; /* Rounded corners */
-    background-color: royalblue; /* Royal blue color for buttons */
+    border-radius: 5px;
+    background-color: #4285f4;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
   }
   
   /* Hover effect for buttons */
   button:hover {
-    background-color: #4169e1; /* Darker royal blue on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    background-color: #3367d6;
   }
   
   /* Style the "Stop Grayscale" button in red */
   #stop-grayscale {
-    background-color: #f44336; /* Red color */
+    background-color: #ea4335;
   }
   
   #stop-grayscale:hover {
-    background-color: #e41e1e; /* Darker red on hover */
+    background-color: #d33828;
   }
   
+  /* Footer styles */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  
+  .footer a {
+    color: #4285f4;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
