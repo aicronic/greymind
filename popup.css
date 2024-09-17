@@ -1,0 +1,41 @@
+/* Control the popup size */
+body {
+    width: 300px;
+    height: 150px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the buttons */
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    background-color: royalblue; /* Royal blue color for buttons */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #4169e1; /* Darker royal blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  /* Style the "Stop Grayscale" button in red */
+  #stop-grayscale {
+    background-color: #f44336; /* Red color */
+  }
+  
+  #stop-grayscale:hover {
+    background-color: #e41e1e; /* Darker red on hover */
+  }
+  
