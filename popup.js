@@ -44,3 +44,5 @@ function updateUI(isGrayscale) {
       updateUI(false);
     });
   });
+
+  /*Icon attribute link: <a href="https://www.flaticon.com/free-icons/concentration" title="concentration icons">Concentration icons created by Flat Icons - Flaticon</a>*/
